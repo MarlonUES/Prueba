@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="Colectivo" content="">
+  <meta name="Angel_Cotto" content="">
+  <title>Pagina Grupal</title>
+  <!-- Bootstrap core CSS-->
+  <link href="css/bootstrap/bootstrap.css" rel="stylesheet">
+  <link href="css/menu-sidebar.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="wrapper">
+      <div class="overlay"></div>
+      <nav class="navbar navbar-default 
+      navbar-fixed-top" role="navigation" 
+      id="sidebar-wrapper">
+        <ul class="nav sidebar-nav">
+          <li class="sidebar-brand">
+            <a href="#">Inicio</a>
+          </li>
+          <li><a href="views/perfil1.html">Francisco Cotto</a></li>
+          <li><a href="views/perfil2.html">Rafael Amaya</a></li>
+          <li><a href="#">Angel Cotto</a></li>
+        </ul>
+      </nav>
+    <!--  hasta aqui termina mi menu -->
+
+    <!-- Aqui inicia el menu responsivo
+ -->
+ <div id="page-content-wrapper">
+    <button type="button" data-toggle="offcanvas"
+     class="hamburger is-closed">
+      <span class="hamb-top"></span>
+      <span class="hamb-middle"></span>
+      <span class="hamb-bottom"></span>
+    </button>
+  <!--   hasta aqui termina mi menu responsivo -->
+   <div class="container">
+    <div class="row">
+      <div class="col-md-5">
+        <img src="img/750x450.png" class="adaptar img-fluid">
+      </div>
+      <div class="col-md-7">
+        <h2>Mi titulo</h2>
+        <br>
+        <p>Aqui estara mi parrafo 1</p>
+        <br>
+        <p>Aqui estara mi parrafo 2sdasdasdasdasd
+          asdasdasdasdas
+          asdasdasd
+          asdasdas
+          asdasd
+          asdasd</p>
+
+      </div>
+    </div>
+<div class="row mb-4">
+ 
+  <div class="col-md-4">
+    <div class="card text-center">
+         <img src="img/750x450.png" class="adaptar img-fluid">
+         <div class="card-body">
+          <h4>Team Member</h4>
+          <br>
+          <p class="text-member">Position Member</p>
+          <p>Description Membersdasdasdasdasdasdasdasdasdasds</p>
+          <br>
+          <a href="#">Conoce mas</a>
+         </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card text-center">
+         <img src="img/750x450.png" class="adaptar img-fluid">
+         <div class="card-body">
+          <h4>Team Member</h4>
+          <br>
+          <p class="text-member">Position Member</p>
+          <p>Description Membersdasdasdasdasdasdasdasdasdasds</p>
+          <br>
+          <a href="#">Conoce mas</a>
+         </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="card text-center">
+         <img src="img/750x450.png" class="adaptar img-fluid">
+         <div class="card-body">
+          <h4>Team Member</h4>
+          <br>
+          <p class="text-member">Position Member</p>
+          <p>Description Membersdasdasdasdasdasdasdasdasdasds</p>
+          <br>
+          <a href="#">Conoce mas</a>
+         </div>
+    </div>
+  </div>
+</div>
+
+ <footer class="py-5 bg-dark">
+      <div class="container">
+        <p class="text-center text-white">Copyright &copy; Your Website 2017</p>
+      </div>
+</footer>
+
+ </div>
+ </div>
+
+
+
+
+
+
+<!-- 
+Estructura de Bootstrap
+  1. Se decide o no si se declara antes una div con una clase personal
+  2. Declara un Contenedor de los 2 existentes
+     class="Container"
+     class="Container-fluid"
+  3. Declara una fila
+      class="row"
+  4. Declaran las columnas cuya sumatoria sera siempre 12
+      class="col-md-6"
+      class="col-md-6"
+  5. Se procede a crear nuestro diseño.
+ -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="js/jquery/jquery-1.12.4.js"></script>
+    <script src="js/bootstrap/bootstrap.js"></script>
+    <script src="js/sb-admin.js"></script>
+      <script type="text/javascript">
+      $(document).ready(function () {
+          var trigger = $('.hamburger'),
+          overlay = $('.overlay'),
+          isClosed = false;
+
+          trigger.click(function () {
+          hamburger_cross();      
+    });
+
+    function hamburger_cross() {
+
+      if (isClosed == true) {          
+        overlay.hide();
+        trigger.removeClass('is-open');
+        trigger.addClass('is-closed');
+        isClosed = false;
+      } else {   
+        overlay.show();
+        trigger.removeClass('is-closed');
+        trigger.addClass('is-open');
+        isClosed = true;
+      }
+  }
+  
+  $('[data-toggle="offcanvas"]').click(function () {
+        $('#wrapper').toggleClass('toggled');
+  });  
+});
+  </script> 
+  </div>
+</body>
+
+</html>
